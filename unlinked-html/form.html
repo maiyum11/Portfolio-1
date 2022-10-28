@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Form</title>
+<!--to link the correct css file + desk view-->
+<link href="formstyle.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)"> 
+<!-- tablet view style sheet-->
+<link href="tab-ph.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
+<!-- phone view style sheet-->
+<link href="tab-ph.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+</head> 
+<body>
+<div id="wrapper">
+<!--to navigate back to the homepage-->
+    <nav>
+        <ul>
+            <li><a href="index.html">Homepage</a></li>
+        </ul>
+    </nav>
+<h1>Contact Me</h1> 
+<!--the action it has to take once the user clicks submit-->
+<form action=mailto:email@email.com ?subject=Signup Form method="post" 
+    enctype="text/plain" name="form"> 
+<!--asking for user input (fisrtname) in the form-->
+<p> 
+    <label for="name">Firstname</label>
+    <input type="text" name="name" placeholder="Your firstname here" size="32"> 
+</p>
+<!--asking for user input (lastname) in the form-->
+<p> 
+    <label for="name">Lastname</label>
+    <input type="text" name="name" placeholder="Your lastname" size="32"> 
+</p>
+<!--asking for user input (mail) in the form-->
+<p>
+<label for="email">Email address</label> 
+<input name="email" type="email" placeholder="Your Email here" size="40"> 
+</p>
+<!--asking for user input (comments or feedback) in the form-->
+<p> 
+<label for="comments">Any Comments or Feedback?</label><br> 
+<textarea name="comments" cols="70" rows="7"></textarea> 
+</p>
+<!--"submit" compulsory for a form-->
+<p><input type="SUBMIT" value="SUBMIT"/></p>
+<!--"reset" clears the whole form if a user desires-->
+<p><input type="RESET" value="RESET"/></p>
+</form>
+</div>
+<!--class clear removes the float-->
+<div class="clear"></div> 
+<!--to show the footer info of the doc-->
+        <div id="footer"> 
+            <h5>ⓒ A site by Mariam Shahnawaz</h5>
+</div>
+</body> 
+</html>
