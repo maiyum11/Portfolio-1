@@ -15,6 +15,6 @@ app.get('/projects', function(req, res, next) {
 });
 /* GET contact me page. */
 app.get('/contactme', function(req, res, next) {
-  res.render('index', { title: 'contact me' });
+  res.render('index', { title: 'Contact Me' });
 });
 module.exports = app;
