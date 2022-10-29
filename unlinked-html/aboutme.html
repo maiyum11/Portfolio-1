@@ -2,13 +2,10 @@
 <html>
 <head>
 <meta charset="UTF-8">
-<title>Form</title>
+<title>About Me</title>
 <!--to link the correct css file + desk view-->
 <link href="aboutme.css" rel="stylesheet" type="text/css" media="only screen and (min-width:960px)">
- <!-- tablet view style sheet-->
-<link href="tab-ph.css" rel="stylesheet" type="text/css" media="only screen and (min-width:481px) and (max-width:960px)">
-<!-- phone view style sheet-->
-<link href="tab-ph.css" rel="stylesheet" type="text/css" media="only screen and (max-width:480px)">
+<link rel="stylesheet" type="text/css" href="video.css" media="only screen and (min-width:960px)">
 </head> 
 <body>
 <div class="wrapper">
@@ -21,7 +18,7 @@
         <h1>About me</h1>
         <h2>A passionate undergraduate student</h2>
         <div class="photo">
-            <img src=about_img2-removebg-preview.png>
+            <img src= /public/images/about_img2-removebg-preview.png>
         </div>
         <p>Hello I'm Mariam!
             A passionate and personable student, born in Pakistan, raised in Saudi Arabia and is now pursuing a Bachelor's Degree in Information Technology at the University of
@@ -29,13 +26,33 @@
             team projects or anything which involves working with a group of people.
             Believing in success is mostly what I do!</p>
 <!--video linked-->
-        <a href="video.html" class="vid" >Watch an encouraging video --> </a>
-
+    <h1>Step to Success</h1>
+    <video width="320" height="240" controls preload="auto" autoplay loop muted id="video"> 
+<!--two different formats for vid-->
+<!--windows and etc-->
+    <source src="C:\Users\maria\OneDrive\Desktop\web_assignment2\Step to successmp4.mp4" type="video/mp4">
+<!--for mac-->
+    <source src="C:\Users\maria\OneDrive\Desktop\web_assignment2\Step to successogv.ogv" type="video/ogg"> 
+    </video> 
+    <br>
+<!--creates a button, 
+takes an action-->
+    <button onclick="playPause()">Play or Pause</button> 
+    <script> 
+        var myVideo=document.getElementById("video"); 
+        function playPause() 
+        { 
+        if (myVideo.paused) 
+        myVideo.play(); 
+        else myVideo.pause(); 
+        } 
+    </script>
 </div>
 <!--class clear removes the float-->
-<div class="clear"></div> 
-        <div id="footer"> 
-            <h5>ⓒ A site by Mariam Shahnawaz</h5>
+<div class="clear"></div>
+<!--to show the footer info of the doc-->
+    <div id="footer"> 
+        <h5>ⓒ A site by Mariam Shahnawaz</h5>
     </div>
 </body>
 </html>
