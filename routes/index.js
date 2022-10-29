@@ -2,8 +2,9 @@ var express = require('express');
 var app = express.Router();
 
 /* GET home page. */
+
 app.get('/home', function(req, res, next) {
-  res.render('index', { title: 'Homepage', section: '2nd year Networking and IT security student' });
+  res.render(('index'), { title: 'Homepage', section: '2nd year Networking and IT security student' });
 });
 /* GET about me page. */
 app.get('/aboutme', function(req, res, next) {
