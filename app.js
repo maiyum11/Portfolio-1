@@ -4,8 +4,8 @@ let path = require('path');
 let cookieParser = require('cookie-parser');
 let logger = require('morgan');
 
-let indexRouter = require('./routes/index');
-let usersRouter = require('./routes/users');
+let indexRouter = require('./controller/index');
+let usersRouter = require('./controller/users');
 
 let app = express();
 
@@ -19,9 +19,9 @@ app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 app.use(express.static(path.join(__dirname, 'node_modules')));
-app.use(express.static(path.join(__dirname, 'unlinked-html')));
-app.use(express.static(path.join(__dirname, 'unlinked-css')));
-
+app.use(express.static(path.join(__dirname, 'linked-html')));
+app.use(express.static(path.join(__dirname, 'linked-css')));
+app.use(express.static('public'));
 
 app.use('/', indexRouter);
 app.use('/users', usersRouter);
