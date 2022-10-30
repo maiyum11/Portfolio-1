@@ -3,7 +3,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node server(w).js"
+    "start": "node ./server(w).js"
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.2.0",
