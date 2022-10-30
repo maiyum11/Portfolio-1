@@ -9,9 +9,10 @@ body{
     background-color: rgb(0, 0, 0);
     color:brown; 
 }
-h5{
-    color: aliceblue;
-    text-align: center;
+h1{
+    color: rgb(246, 30, 10)240, 240;
+    text-align: left;
+    font-size: 16px;
 }
 /*to style the wrapper id */
 #wrapper{
@@ -29,7 +30,7 @@ nav{
 }
 /*to adjust the size of the logo*/
 .mylogo{
-    width: 150px;
+    width: 70px;
 }
 /*to style the unordered list in the navigation bar*/
 nav ul li{
